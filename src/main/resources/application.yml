@@ -10,5 +10,5 @@ spring:
     show-sql: true
     hibernate:
       #colocar em none quando em produção
-      ddl-auto: create-drop
+      ddl-auto: update
     generate-ddl: true
