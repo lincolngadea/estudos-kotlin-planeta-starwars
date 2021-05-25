@@ -29,7 +29,10 @@ dependencies {
 //	Swagger
 	implementation("io.springfox:springfox-swagger2:2.9.2")
 	implementation("io.springfox:springfox-swagger-ui:2.9.2")
-
+//	Cache
+	implementation("org.springframework.boot:spring-boot-starter-cache")
+//	Actuators
+	implementation("org.springframework.boot:spring-boot-starter-actuator")
 
 }
 
