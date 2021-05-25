@@ -1,8 +1,8 @@
 spring:
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/kotlindb
-    username: root
+    driverClassName: ${DRIVER_MYSQL:com.mysql.cj.jdbc.Driver}
+    url: ${URL:jdbc:mysql://localhost:3306/kotlindb}
+    username: ${USERNAME:root}
     password: root
     initialization-mode: always
   jpa:

@@ -1,0 +1,9 @@
+version: '1'
+services:
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_DB: database
+      MYSQL_PASS: password
+      MYSQL_USER: username
