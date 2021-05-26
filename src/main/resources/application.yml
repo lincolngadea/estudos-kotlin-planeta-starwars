@@ -1,9 +1,9 @@
 spring:
   datasource:
-    driverClassName: ${DRIVER_MYSQL:com.mysql.cj.jdbc.Driver}
-    url: ${URL:jdbc:mysql://localhost:3306/kotlindb}
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: ${MYSQL_HOST:jdbc:mysql://localhost:3306/kotlindb}
     username: ${USERNAME:root}
-    password: root
+    password: ${MYSQL_PASSWORD:root}
     initialization-mode: always
   jpa:
     # colocar em false quando em produção
